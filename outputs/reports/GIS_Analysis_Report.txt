@@ -1,0 +1,85 @@
+
+GIS AND GEOSPATIAL STUDY
+Two-Date Vegetation Comparison Report
+
+1. PROJECT OBJECTIVE
+
+To demonstrate raster and vector data processing,
+coordinate reference systems, GeoJSON handling,
+NDVI calculation and temporal vegetation comparison.
+
+2. STUDY AREA
+
+Study Area: Wetland Study Area
+Location: Sample Region
+CRS: EPSG:4326
+Boundary Format: GeoJSON
+
+Note: The study area is fictional and uses sample coordinates.
+
+3. DATASETS
+
+T1: August 2023
+T2: August 2024
+
+Both raster datasets contain:
+- Red band
+- Near-Infrared band
+- 100 x 100 pixels
+- EPSG:4326 coordinate reference system
+
+4. METHODOLOGY
+
+NDVI = (NIR - Red) / (NIR + Red)
+
+NDVI Difference = T2 NDVI - T1 NDVI
+
+5. RESULTS
+
+Mean NDVI in August 2023: 0.3690
+Mean NDVI in August 2024: 0.1831
+
+Mean NDVI Difference: -0.1859
+Percentage Change: -50.37%
+
+Total Pixels: 10000
+Pixels with NDVI decline greater than 0.05: 9994
+Pixels with relatively stable NDVI: 6
+Pixels with NDVI improvement greater than 0.05: 0
+
+6. INTERPRETATION
+
+The synthetic dataset shows a decrease in average NDVI
+between the two observation dates.
+
+This represents simulated vegetation greenness decline.
+It does not establish actual environmental degradation.
+
+7. OUTPUT FILES
+
+- wetland_boundary.geojson
+- wetland_boundary_map.html
+- T1_August_2023.tif
+- T2_August_2024.tif
+- NDVI_T1_2023.tif
+- NDVI_T2_2024.tif
+- NDVI_Difference_2023_2024.tif
+- vegetation_comparison.png
+- vegetation_statistics.csv
+
+8. LIMITATIONS
+
+- Raster values are synthetically generated.
+- The study boundary is fictional.
+- No actual satellite imagery was used.
+- Results are for educational demonstration only.
+
+9. CONCLUSION
+
+This exercise demonstrates a basic geospatial workflow
+using Python, GeoPandas, Rasterio, NumPy, Pandas,
+Matplotlib and Folium.
+
+The workflow covers vector creation, GeoJSON export,
+raster processing, NDVI calculation, temporal comparison
+and geospatial output generation.
